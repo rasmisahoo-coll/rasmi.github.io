@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Register Form</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f2f4f8;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .form-container {
+      background-color: white;
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      width: 350px;
+    }
+
+    .form-container h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      font-size: 24px;
+    }
+
+    .form-container label {
+      display: block;
+      margin: 10px 0 5px;
+      font-weight: 500;
+    }
+
+    .form-container input[type="text"],
+    .form-container input[type="email"],
+    .form-container input[type="password"] {
+      width: 100%;
+      padding: 12px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+    }
+
+    .form-container input[type="submit"] {
+      width: 100%;
+      padding: 12px;
+      margin-top: 20px;
+      background-color: #bcf64f;
+      border: none;
+      border-radius: 8px;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .form-container input[type="submit"]:hover {
+      background-color: #b5f53e;
+    }
+
+    .form-container p {
+      text-align: center;
+      margin-top: 15px;
+      font-size: 14px;
+    }
+
+    .form-container a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    .form-container a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <h2>Create Account</h2>
+    <form action="register.php" method="post">
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" required>
+
+      <label for="confirm">Confirm Password</label>
+      <input type="password" id="confirm" name="confirm_password" required>
+
+      <input type="submit" value="Register">
+    </form>
+    <p>Already have an account? <a href="login.html">Login</a></p>
+  </div>
+
+</body>
+</html>
+222
